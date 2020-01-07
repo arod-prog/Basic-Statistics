@@ -1,0 +1,13 @@
+#import median from statistics
+from statistics import median
+
+# where the input was put
+n = int(input())
+
+#sorted the list from least to greatest and splits
+x = sorted(list(map(int, input().split())))
+
+#prints
+print(int(median(x[:n//2])))
+print(int(median(x)))
+print(int(median(x[(n+1)//2:])))
