@@ -1,0 +1,27 @@
+#adds numpy a general-purpose array-processing package
+import numpy as np
+
+#is a pacake within numpy that has more statistial functions
+from scipy import stats
+
+#creates space for number of spaces and sorts the space in order
+size = int(input())
+numbers = list(map(int, input().split()))
+
+#numpy has built mean and median functions
+print(np.mean(numbers))
+print(np.median(numbers))
+
+#mode uses stas from scipy
+print(int(stats.mode(numbers)[0]))
+
+#
+import numpy as np
+from scipy import stats
+
+size = int(input())
+numbers = list(map(int, input().split)))
+
+print(np.mean(numbers))
+print(np.median(numbers))
+print(int(stats.mode(numbers)[0]))
